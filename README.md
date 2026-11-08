@@ -33,3 +33,16 @@ The automated engine streams data sequentially page-by-page directly into a stru
 - **Automation Core:** Selenium Web Driver Matrix
 - **Network Layer:** SOCKS5 Encrypted Proxy Tunneling / Tor Daemon Service Layer
 - **Storage Engine:** Standard I/O CSV Database Engine
+## 💼 Commercial Availability & Proxy Infrastructure Partnership
+I am available for weekly cross-border market intelligence retainers, custom e-commerce data pipeline architectures, and anti-bot bypass deployment. 
+
+- **📧 Email:** Emechebefrancis8@gmail.com
+- **💼 LinkedIn:** 
+
+### 🌐 Enterprise Proxy Integrations
+This architecture is engineered to deploy seamlessly alongside premium global proxy networks. I specialize in configuring, testing, and optimizing high-concurrency scraping nodes for:
+* **anyIP.io** (Residential SOCKS5 Routing Matrix)
+* **Bright Data** (Web Unlocker & Residential Proxy Networks)
+* **Oxylabs / Smartproxy** (Targeted Geolocation Tunneling)
+
+*To request a free 3-page sample competitor price tracking sweep for your specific retail or clothing brand keywords, contact me directly via email or open an issue tab.*
