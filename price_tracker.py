@@ -18,11 +18,11 @@ def initialize_driver():
     options.set_preference("log.level", "fatal")
     
     # 2. Independent United Kingdom Tor Residential Tunnel Mappings
-    options.set_preference("network.proxy.type", 1)  # 1 = Manual proxy mode
-    options.set_preference("network.proxy.socks", "127.0.0.1")
-    options.set_preference("network.proxy.socks_port", 9050)
-    options.set_preference("network.proxy.socks_version", 5)
-    options.set_preference("network.proxy.socks_remote_dns", True)
+    #options.set_preference("network.proxy.type", 1)  # 1 = Manual proxy mode
+    #options.set_preference("network.proxy.socks", "127.0.0.1")
+    #options.set_preference("network.proxy.socks_port", 9050)
+    #options.set_preference("network.proxy.socks_version", 5)
+    #options.set_preference("network.proxy.socks_remote_dns", True)
     
     # 3. 🛡️ Elite Browser Header Emulation Core (Clears the 503 Anti-Bot Wall)
     # This tricks Amazon into seeing a real Windows 10 consumer machine using Firefox 120
@@ -36,9 +36,6 @@ def initialize_driver():
     options.set_preference("network.http.referer.XOriginPolicy", 0)
     options.set_preference("geo.enabled", False)
     
-    print("[+] Initializing premium web automation core engine...")
-    print("[+] Injecting advanced real-browser request headers...")
-    print("[+] Tunneling data tracks securely through local UK Tor network...")
     
     # 4. Launch the browser engine WITH all option packages securely pre-loaded
     driver = webdriver.Firefox(options=options)
@@ -197,28 +194,25 @@ def extract_product_data(driver, target_url, page_num):
         print("    [-] Pipeline routing check active. Transitioning to next page...")
 
 if __name__ == "__main__":
-    print("======================================================================")
-    print("       🚀 INITIALIZING SECTOR 3: AMAZON UK NATIVE NATION SWEEP       ")
-    print("======================================================================")
-    
     create_database()
     browser = initialize_driver()
     
-    # Pristine regional target URL link forcing strict UK global marketplace parameters
-    base_target_url = "https://amazon.co.uk/s?k=supplements&language=en_GB&currency=GBP"
+    # 🎯 TARGET MARKET FOCUS: Toggle your outreach niche focus here instantly!
+    # search_keyword = "clothing"          # Niches 1: Fashion Apparel
+    search_keyword = "supplements"       # Niche 2: Health & Wellness
+    # search_keyword = "skincare cream"    # Niche 3: Beauty & Personal Care
     
-       # Overwrite your execution block link builder so it forces unique, sequential page indexes
     try:
         for page in range(1, 11):
-            dynamic_url = f"{base_target_url}&page={page}"
+            # Injects the target niche keyword cleanly into your cross-border parameter chain
+            dynamic_url = f"https://amazon.co.uk/s?k={search_keyword}&language=en_GB&currency=GBP&page={page}"
             extract_product_data(browser, dynamic_url, page)
-            time.sleep(7)  # Standard human pacing delay
-
+            time.sleep(7)  # Defensive safe human pacing delay
             
     finally:
         print("\n[+] Initiating deep system infrastructure cleanup procedures...")
         browser.quit()
-        print("[✓] Automation run finalized. UK data sheets securely populated.")
-        print("======================================================================")
+        print("[✓] Automation run finalized. Secure multi-niche tracking matrix closed.")
+
     
    
