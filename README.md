@@ -1,20 +1,32 @@
-# Amazon Global Multi-Market E-Commerce Data Scraping & Market Intelligence Pipeline
+# Amazon Global Multi-Market Price Intelligence Pipeline
 
-An enterprise-grade, asynchronous web automation and data harvesting platform built to extract real-time competitor pricing matrices, inventory shifts, and promotional trends across ANY retail sector on any global Amazon marketplace endpoint (.com, .co.uk, .ca, .com.au, .de, etc.).
+Automated data collection system for Amazon marketplace price tracking across multiple retail sectors and global endpoints (.co.uk, .com, .ca, .com.au, .de).
 
-## 🎯 Core Market Focus & Niche Flexibility
-This pipeline is fully market-agnostic and optimized to track high-volatility, high-demand global e-commerce sectors requiring strict weekly pricing monitoring:
-1. **Apparel & Fashion** (Clothing, Activewear, Footwear, Fashion Accessories)
-2. **Health & Wellness** (Dietary Supplements, Vitamins, Sports Nutrition)
-3. **Beauty & Personal Care** (Skincare Serums, Cosmetics, Luxury Grooming)
+## Supported Markets
+- **Apparel & Fashion:** Clothing, Activewear, Footwear
+- **Health & Wellness:** Supplements, Vitamins, Sports Nutrition  
+- **Beauty & Personal Care:** Skincare, Cosmetics, Grooming
+- **Education & Lifestyle:** School bags, Stationery
 
-## 🚀 Architectural Core Features
-- **Global Gateway Architecture:** Seamlessly shifts data tunnels between international routing nodes using automated SOCKS5 residential proxy circuit configurations to match your target marketplace location natively.
-- **Independent Anti-Bot Bypass:** Outfitted with elite header emulation layers that spoof human browser signatures down to the byte level, completely clearing 503 firewalls and regional CDN blocks.
-- **Dynamic Structural Grid Handling:** Utilizes resilient CSS multi-container fallback selection arrays capable of harvesting text data rows from shifting international e-commerce layouts.
-- **Pristine Database Compilation:** Automatically quote-locks extracted text fields (`QUOTE_MINIMAL`) to isolate target strings and protect database column alignment from breaking due to structural item commas.
+## Core Features
+- **Multi-Marketplace Support:** Change marketplace domain and keyword to track any Amazon region
+- **Multi-Niche Toggle:** Single variable switch between markets
+- **Resilient Data Extraction:** Fallback selectors for Amazon layout changes
+- **Cookie & Consent Handling:** Auto-bypass for EU/UK compliance banners
+- **CSV Reporting:** Structured output with Timestamp, Product Name, Price, Source URL, Status
 
-## 🗓️ Corporate Workflow & Retainer Cadence
-This data scraping pipeline is engineered for high-value weekly market intelligence operations:
-1. **Sunday Evening Deep Sweeps (9:00 PM Client Target Time):** Deploys automated matrix tracking loops to harvest volatile weekend pricing changes across global sectors at peak volume hours.
-2. **Monday Morning Reporting (7:00 AM Delivery):** Compiles and exports structured, quote-insulated CSV deliverables engineered for immediate injection into executive weekly strategy meetings.
+## Workflow
+- Weekly price sweeps across target sectors
+- CSV export ready for pricing strategy and competitor analysis
+- Configurable page depth (10+ pages per market)
+
+## Tech Stack
+Python, Selenium WebDriver, Firefox
+
+## Usage
+pip install selenium
+# Set target market
+search_keyword = "supplements"
+python amazon_tracker.py
+
+Output: market_prices.csv
