@@ -27,6 +27,15 @@ Python, Selenium WebDriver, Firefox
 pip install selenium
 # Set target market
 search_keyword = "supplements"
-python amazon_tracker.py
+python price_tracker.py
 
 Output: market_prices.csv
+
+## Built by Francis | Founder @ Francis Automation
+📩 Email: Emechebefrancis8@gmail.com
+🔗 LinkedIn:www.linkedin.com/in/francis-automation
+
+
+Open to **Data Engineering, Backend Automation, and Healthcare Analytics** opportunities.
+
+ 
